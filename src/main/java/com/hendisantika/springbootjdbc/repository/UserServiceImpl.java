@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -25,6 +26,7 @@ import java.util.Map;
  * Time: 07:26
  * To change this template use File | Settings | File Templates.
  */
+@Repository
 public class UserServiceImpl implements UserService {
     private final String INSERT_SQL = "INSERT INTO USERS(name, address, email)  values(:name,:address,:email)";
     private final String FETCH_SQL = "select record_id, name, address, email from users";
