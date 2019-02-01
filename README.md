@@ -26,18 +26,24 @@ CREATE TABLE users (record_id bigint NOT NULL AUTO_INCREMENT, name varchar(100),
 
 #### Go to test folder and check all the test classes to understand the Integration Test implementation.
 
-Create a New record - POST method
+#### Create a New record - POST method
 
 ```
 POST http://localhost:8080/users
 ```
 
-Retrieve users -GET method
+![Add New Data](img/add.png "Add New Data")
+
+#### Retrieve users - GET method
 ```
 GET http://localhost:8080/users
 ```
 
-Retrieve user by id
+![Retrieve users](img/list.png "Retrieve users")
+
+#### Retrieve user by id
 ```
 GET http://localhost:8080/users/1
 ```
+
+![Retrieve user by id](img/find.png "Retrieve user by id")
