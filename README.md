@@ -9,15 +9,15 @@ In this project, We will show how Spring boot and spring data can be used to int
 
 #### Step 2 Build the project and run Integration Test
 
-`mvn clean build`
+`mvn clean package`
 
 #### Step 3 If you want to start the application
 
-java -jar build/libs/springboot-jdbc-0.0.1-SNAPSHOT.jar
+java -jar target/springboot-jdbc-0.0.1-SNAPSHOT.jar
 
 #### Launch H2 Console
 
-`http:/localhost:8100/h2-console`
+`http:/localhost:8080/h2-console`
 
 Create Table in H2 :
 ```
